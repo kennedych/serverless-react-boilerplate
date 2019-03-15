@@ -17,7 +17,7 @@
     "db-setup": "cd api && cd todo && sls dynamodb install",
     "db-remove": "cd api && cd todo && sls dynamodb remove",
     "predeploy-s3": "cd web && npm run build",
-    "deploy-s3": "cd web && aws s3 --profile <profile> sync ./build/ s3://<bucket_name> --region <region>",
+    "deploy-s3": "cd web && aws s3 --profile chrisprivate sync ./build/ s3://my-awesome-site.tk --region ap-southeast-2",
     "app": "gulp serve"
   },
   "repository": {
